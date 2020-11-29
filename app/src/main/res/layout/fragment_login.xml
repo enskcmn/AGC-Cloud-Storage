@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:context="com.ekcmn.kotlinstoragedeneme.view.LoginFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:id="@+id/userInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="16dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/user_avatar"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/userInfoLayout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+                android:id="@+id/hwIdLoginBtn"
+                android:layout_width="247dp"
+                android:layout_height="43dp" />
+
+            <Button
+                android:id="@+id/btn_list_files"
+                android:layout_width="247dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/hwid_auth_button_color_red"
+                android:drawableStart="@drawable/hwid_auth_button_round_white"
+                android:text="List All Files"
+                android:textColor="@color/hwid_auth_button_color_text_white" />
+
+            <Button
+                android:id="@+id/btn_file_upload"
+                android:layout_width="247dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/hwid_auth_button_color_red"
+                android:drawableStart="@drawable/hwid_auth_button_round_white"
+                android:text="Upload a File"
+                android:textColor="@color/hwid_auth_button_color_text_white" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="247dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/hwid_auth_button_color_red"
+                android:drawableStart="@drawable/hwid_auth_button_round_white"
+                android:text="Log out with Huawei ID"
+                android:textColor="@color/hwid_auth_button_color_text_white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

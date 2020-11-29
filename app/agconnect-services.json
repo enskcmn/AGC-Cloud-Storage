@@ -1,0 +1,31 @@
+{
+	"agcgw":{
+		"backurl":"connect-dre.dbankcloud.cn",
+		"url":"connect-dre.hispace.hicloud.com"
+	},
+	"client":{
+		"cp_id":"70090000024539114",
+		"product_id":"736430079244609432",
+		"client_id":"435309272402756736",
+		"client_secret":"A5895E9AFEE958D1B2C6F1F24ADFDE90B79DFB1728FD135FE5E8A33C52E037BB",
+		"app_id":"103012175",
+		"package_name":"com.ekcmn.kotlinstoragedeneme",
+		"api_key":"CgB6e3x9782xoeVpdCxRDqaFWqu0xtWjhsga7Tc2cpTc5egjLgCNs9aU/+v1+oGN/CSkXj16h1bs2X+pvpWoqj4u"
+	},
+	"service":{
+		"analytics":{
+			"collector_url":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"resource_id":"p1",
+			"channel_id":""
+		},
+		"cloudstorage":{
+			"default_storage": "mypersonalstorage-1si6c",
+			"storage_url":"https://ops-dre.agcstorage.link"
+		},
+		"ml":{
+			"mlservice_url":"ml-api-dre.ai.dbankcloud.com,ml-api-dre.ai.dbankcloud.cn"
+		}
+	},
+	"region":"DE",
+	"configuration_version":"1.0"
+}

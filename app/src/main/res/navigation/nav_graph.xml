@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ekcmn.kotlinstoragedeneme.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_listObjectsFragment"
+            app:destination="@id/listObjectsFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_uploadFileFragment"
+            app:destination="@id/uploadFileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listObjectsFragment"
+        android:name="com.ekcmn.kotlinstoragedeneme.view.ListObjectsFragment"
+        android:label="list_objects_fragment"
+        tools:layout="@layout/list_objects_fragment" >
+        <action
+            android:id="@+id/action_listObjectsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadFileFragment"
+        android:name="com.ekcmn.kotlinstoragedeneme.view.UploadFileFragment"
+        android:label="UploadFileFragment" >
+        <action
+            android:id="@+id/action_uploadFileFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
